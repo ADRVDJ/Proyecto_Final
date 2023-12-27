@@ -1,17 +1,21 @@
 /* app.component.css */
-
-/* Estilos para el encabezado */
-.header {
-  background-color: #3498db; /* Color azul */
-  height: 100px; /* Ajusta la altura según tus preferencias */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+/* Estilos para el encabezado */
+/* .header {
+  background-color: #3498db; 
+  height: 100px; 
+} */
 
 /* Estilos para el contenedor principal */
-.container-fluid {
+/* .container-fluid {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Establecer la altura mínima al 100% de la altura visible */
-}
+  min-height: 100vh; 
+} */
 
 /* Estilos para el contenido y el pie de página */
 .row {
@@ -19,10 +23,10 @@
 }
 
 /* Estilos para el pie de página */
-.footer {
+/* .footer {
   background-color: #007bff;
   color: #fff;
-  height: 40px; /* Ajusta la altura según tus preferencias */
+  height: 40px; 
   padding: 10px;
   text-align: center;
-}
+} */

@@ -5,22 +5,21 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
 body {
   background-color: #e5ecf9;
 }
 
 .container {
   display: flex;
-  height: 700px;
+  height: 500px;
   width: 1000px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   margin: auto;
-  margin-top: 150px;
+  margin-top: 75px;
 }
 
 .info {
-  background-image: url(logo.JPG);
+  background-image: url(LOGO.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -50,7 +49,7 @@ body {
 }
 
 .form {
-  padding: 150px 100px;
+  padding: 70px 100px; /*Padding del formulario*/
   width: 50%;
   text-align: center;
   background-color: #46adfa;
@@ -90,11 +89,37 @@ body {
 }
 
 .submit {
-  background-color: #097ef6;
-  padding: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+  border: 1px solid white;
+  background-color: #46adfa;
+  padding: 10px;
   bottom: 0;
   color: #fff;
-  font-size: 18px;
+  font-size: 15px;
   text-transform: uppercase;
-  border-radius: 25px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+/* Estilos footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.texto_footer {
+  width: 100%;
+  height: 50px;
+  background-color: #46adfa;
+  padding: 5px 0;
+  text-align: center;
+  color: black;
+}
+.texto-1 {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
 }

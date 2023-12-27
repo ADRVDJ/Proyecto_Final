@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="crear-actividad.component.css">
-  <title>Formulario Crear Actividad</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="crear-actividad.component.css" />
+    <title>Formulario Crear Actividad</title>
+  </head>
+  <body>
+    <form>
+      <label for="nombre">Actividad:</label>
+      <input type="text" id="nombre" name="nombre" required />
 
-  <form>
-    <label for="nombre">Actividad:</label>
-    <input type="text" id="nombre" name="nombre" required>
+      <label for="descripcion">Descripción de la Actividad:</label>
+      <textarea
+        id="descripcion"
+        name="descripcion"
+        rows="4"
+        required
+      ></textarea>
 
-    <label for="descripcion">Descripción de la Actividad:</label>
-    <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
-
-    <button type="submit">Crear Actividad</button>
-    <button type="button" class="cancel">Cancelar</button>
-  </form>
-
-</body>
+      <button type="submit">Crear Actividad</button>
+      <button type="button" class="cancel">Cancelar</button>
+    </form>
+  </body>
 </html>

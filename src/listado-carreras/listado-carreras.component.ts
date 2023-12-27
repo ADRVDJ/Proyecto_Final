@@ -2,11 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-listado-carreras',
-  standalone: true,
-  imports: [],
+  // standalone: true,
+  // imports: [],
   templateUrl: './listado-carreras.component.html',
-  styleUrl: './listado-carreras.component.css'
+  styleUrls: ['./listado-carreras.component.css'],
 })
-export class ListadoCarrerasComponent {
-
-}
+export class ListadoCarrerasComponent {}
