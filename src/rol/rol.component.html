@@ -1,6 +1,6 @@
 <body>
   <header>
-    <nav class="navbar navbar-light bg-light">
+    <!-- <nav class="nav_container navbar navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand"
           ><img
@@ -9,35 +9,205 @@
             alt=""
         /></a>
       </div>
+    </nav> -->
+    <nav class="nav">
+      <div class="nav__container">
+        <a href="#menu" class="nav__menu">
+          <img src="./assets/menu.svg" class="nav__icon" />
+        </a>
+
+        <a href="#" class="nav__menu nav__menu--second">
+          <img src="./assets/close.svg" class="nav__icon" />
+        </a>
+
+        <ul class="dropdown" id="menu">
+          <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+              <!-- <img src="./assets/house.svg" class="dropdown__icon" /> -->
+              <span class="dropdown__span">Roles</span>
+              <img src="./assets/down.svg" class="dropdown__arrow" />
+
+              <input type="checkbox" class="dropdown__check" />
+            </a>
+
+            <div class="dropdown__content">
+              <ul class="dropdown__sub">
+                <li class="dropdown__li">
+                  <a href="#" class="dropdown__anchor">Crear Rol</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+              <!-- <img src="./assets/projects.svg" class="dropdown__icon" /> -->
+              <span class="dropdown__span">Cursos</span>
+              <img src="./assets/down.svg" class="dropdown__arrow" />
+
+              <input type="checkbox" class="dropdown__check" />
+            </a>
+
+            <div class="dropdown__content">
+              <ul class="dropdown__sub">
+                <li class="dropdown__li">
+                  <a href="#" class="dropdown__anchor">Crear Cursos</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+              <!-- <img src="./assets/email.svg" class="dropdown__icon" /> -->
+              <span class="dropdown__span">Periodos</span>
+              <img src="./assets/down.svg" class="dropdown__arrow" />
+              <input type="checkbox" class="dropdown__check" />
+            </a>
+
+            <div class="dropdown__content">
+              <ul class="dropdown__sub">
+                <li class="dropdown__li">
+                  <a href="#" class="dropdown__anchor">Crear Periodos</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+              <!-- <img src="./assets/email.svg" class="dropdown__icon" /> -->
+              <span class="dropdown__span">Carrera</span>
+              <img src="./assets/down.svg" class="dropdown__arrow" />
+              <input type="checkbox" class="dropdown__check" />
+            </a>
+
+            <div class="dropdown__content">
+              <ul class="dropdown__sub">
+                <li class="dropdown__li">
+                  <a href="#" class="dropdown__anchor">Crear Carrera</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+              <!-- <img src="./assets/email.svg" class="dropdown__icon" /> -->
+              <span class="dropdown__span">Jornada</span>
+              <img src="./assets/down.svg" class="dropdown__arrow" />
+              <input type="checkbox" class="dropdown__check" />
+            </a>
+
+            <div class="dropdown__content">
+              <ul class="dropdown__sub">
+                <li class="dropdown__li">
+                  <a href="#" class="dropdown__anchor">Crear Jornada</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+              <!-- <img src="./assets/email.svg" class="dropdown__icon" /> -->
+              <span class="dropdown__span">Materias</span>
+              <img src="./assets/down.svg" class="dropdown__arrow" />
+              <input type="checkbox" class="dropdown__check" />
+            </a>
+
+            <div class="dropdown__content">
+              <ul class="dropdown__sub">
+                <li class="dropdown__li">
+                  <a href="#" class="dropdown__anchor">Crear Materias</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+              <!-- <img src="./assets/email.svg" class="dropdown__icon" /> -->
+              <span class="dropdown__span">Actividades</span>
+              <img src="./assets/down.svg" class="dropdown__arrow" />
+              <input type="checkbox" class="dropdown__check" />
+            </a>
+
+            <div class="dropdown__content">
+              <ul class="dropdown__sub">
+                <li class="dropdown__li">
+                  <a href="#" class="dropdown__anchor">Crear Actividades</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+              <!-- <img src="./assets/email.svg" class="dropdown__icon" /> -->
+              <span class="dropdown__span">Cargo</span>
+              <img src="./assets/down.svg" class="dropdown__arrow" />
+              <input type="checkbox" class="dropdown__check" />
+            </a>
+
+            <div class="dropdown__content">
+              <ul class="dropdown__sub">
+                <li class="dropdown__li">
+                  <a href="#" class="dropdown__anchor">Crear Cargo</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+              <!-- <img src="./assets/email.svg" class="dropdown__icon" /> -->
+              <span class="dropdown__span">Docentes</span>
+              <img src="./assets/down.svg" class="dropdown__arrow" />
+              <input type="checkbox" class="dropdown__check" />
+            </a>
+
+            <div class="dropdown__content">
+              <ul class="dropdown__sub">
+                <li class="dropdown__li">
+                  <a href="#" class="dropdown__anchor">Crear Docentes</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
-  <!-- Formulario -->
-  <form class="formulario">
-    <!-- <fieldset disabled></fieldset> -->
-    <fieldset>
-      <legend class="titulo_formulario">Crear Rol</legend>
-      <div class="contenedor_formulario">
-        <div class="mb-3">
-          <input
-            type="text"
-            id="disabledTextInput"
-            class="form-control"
-            placeholder="Nombre"
-          />
-          <input
-            type="text"
-            id="disabledTextInput"
-            class="form-control"
-            placeholder="Descripción"
-          />
-        </div>
+  <div>
+    <!-- Formulario -->
+    <form class="formulario">
+      <!-- <fieldset disabled></fieldset> -->
+      <fieldset>
+        <legend class="titulo_formulario">Crear Rol</legend>
+        <div class="contenedor_formulario">
+          <div class="mb-3">
+            <input
+              type="text"
+              id="disabledTextInput"
+              class="form-control"
+              placeholder="Nombre"
+            />
+            <input
+              type="text"
+              id="disabledTextInput"
+              class="form-control"
+              placeholder="Descripción"
+            />
+          </div>
 
-        <button type="submit" class="btn1 btn btn-primary">Registrar</button>
-        <button type="submit" class="btn2 btn btn-danger">Cancelar</button>
-      </div>
-    </fieldset>
-  </form>
+          <button type="submit" class="btn1 btn btn-primary">Registrar</button>
+          <button type="submit" class="btn2 btn btn-danger">Cancelar</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
 
   <footer>
     <div class="texto_footer">
@@ -45,8 +215,7 @@
       <p class="texto-1">Instituto Universitario</p>
     </div>
   </footer>
-</body>
-<script>
+  <!-- <script>
   (() => {
     "use strict";
     const tooltipTriggerList = Array.from(
@@ -56,4 +225,5 @@
       new bootstrap.Tooltip(tooltipTriggerEl);
     });
   })();
-</script>
+</script> -->
+</body>
