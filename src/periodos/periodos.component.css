@@ -1,56 +1,4 @@
-/* body {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-}
-
-header,
-footer {
-  background-color: #46adfa;
-  color: white;
-  text-align: center;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-.header {
-  background-color: #46adfa;
-  width: 100%;
-  height: 100px;
-}
-.img_header {
-  width: 90px;
-}
-.enlaces_header {
-  text-decoration: none;
-}
-.lista_header {
-  list-style: none;
-}
-.container-fluid {
-  width: 100%;
-  height: 50px;
-  background-color: #46adfa;
-  padding: 0 60px;
-}
-.imagen_header {
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-}
-nav {
-  padding: 0;
-  margin: 0;
-} */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 footer {
   position: fixed;
@@ -65,7 +13,7 @@ footer {
 }
 
 body {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 
 .nav {
