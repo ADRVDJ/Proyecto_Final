@@ -7,17 +7,12 @@ footer {
 }
 /*Estilos formulario */
 
-
 * {
   margin: 0;
   box-sizing: border-box;
   padding: 0;
-}
-
-body {
   font-family: "Poppins", sans-serif;
 }
-
 .nav {
   background-color: #46adfa;
 

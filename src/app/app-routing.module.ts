@@ -7,13 +7,13 @@ import { FooterComponent } from 'src/footer/footer.component';
 import { ListarRolesComponent } from 'src/listar-roles/listar-roles.component';
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent },
-  {path: 'footer', component: FooterComponent},
-  { path: 'listarroles', component: ListarRolesComponent },
+  // { path: 'login', component: LoginComponent },
+  // {path: 'footer', component: FooterComponent},
+  // { path: 'listarroles', component: ListarRolesComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
