@@ -5,6 +5,254 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+/*Estilos formulario */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.nav {
+  background-color: #46adfa;
+
+  --img1: scale(1);
+  --img2: scale(0);
+}
+
+.nav:has(.dropdown:target) {
+  --img1: scale(0);
+  --img2: scale(1);
+
+  --clip: inset(0 0 0 0);
+}
+
+.nav__container {
+  width: 90%;
+  margin: 0 auto;
+  height: 55px;
+
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-areas: "title img";
+  justify-content: space-between;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+/* .nav__title {
+  color: #fff;
+  grid-area: title;
+} */
+
+.nav__menu {
+  grid-area: title;
+  /* grid-area: img; */
+  position: relative;
+  z-index: 10;
+
+  transform: var(--img1);
+}
+
+.nav__menu--second {
+  transform: var(--img2);
+}
+
+.nav__icon {
+  width: 30px;
+  display: block;
+}
+
+.dropdown {
+  padding-top: 200px;
+  margin-bottom: 70px;
+  font-size: 12px;
+
+  position: absolute;
+  background-color: #fffbfb;
+  width: 75%;
+  max-width: 300px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  /* padding: 1em; */
+
+  display: grid;
+  align-content: center;
+  gap: 1rem;
+
+  overflow-y: auto;
+
+  /* clip-path: var(--clip, inset(100% 0 0 100%)); */
+  clip-path: var(--clip, inset(0 100% 100% 0));
+  transition: clip-path 0.5s;
+}
+
+.dropdown__list {
+  list-style: none;
+}
+
+.dropdown__link {
+  color: rgb(0, 0, 0);
+  padding: 1em 0.7em;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  position: relative;
+  background-color: var(--bg, transparent);
+  border-radius: 6px;
+}
+
+.dropdown__list:has(:checked) {
+  --rows: 1fr;
+  --rotate: rotate(180deg);
+  --bg: #6cb7e9;
+}
+
+.dropdown__check {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.dropdown__arrow {
+  margin-left: auto;
+  transform: var(--rotate, 0);
+  transition: 0.2s transform;
+}
+
+.dropdown__content {
+  display: grid;
+  grid-template-rows: var(--rows, 0fr);
+  transition: 0.3s grid-template-rows;
+}
+
+.dropdown__sub {
+  overflow: hidden;
+}
+
+.dropdown__li {
+  width: 85%;
+  list-style: none;
+  margin-left: auto;
+}
+
+.dropdown__anchor {
+  padding: 1em 0;
+  display: block;
+  color: #000000;
+  text-decoration: none;
+}
+body {
+  background-color: #e5ecf9;
+}
+
+.container {
+  display: flex;
+  height: 500px;
+  width: 1000px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  margin: auto;
+  margin-top: 75px;
+}
+
+.info {
+  background-image: url(LOGO.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  padding: 150px 50px;
+  width: 50%;
+  background-color: white;
+}
+
+.info h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+.info hr {
+  width: 55px;
+  border: 4px solid #fff;
+  margin-left: 170px;
+  margin-bottom: 25px;
+}
+
+.txt-2 {
+  color: #fff;
+  font-size: 18px;
+}
+
+.form {
+  padding: 70px 100px; /*Padding del formulario*/
+  width: 50%;
+  text-align: center;
+  background-color: #46adfa;
+}
+
+.form h2 {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.form p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  background-color: #f9f9f9;
+  outline: none;
+  border: 5px solid #46adfa;
+  border-width: 0 0 0 5px;
+  padding: 15px 35px;
+  margin-bottom: 20px;
+}
+
+.inputs a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  margin-bottom: 35px;
+}
+
+.submit {
+  cursor: pointer;
+  margin-top: 20px;
+  border: 1px solid white;
+  background-color: #46adfa;
+  padding: 10px;
+  bottom: 0;
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/*empiezabody*/
 body {
   background-color: #e5ecf9;
 }
