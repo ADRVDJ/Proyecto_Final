@@ -152,9 +152,9 @@ body {
   color: #000000;
   text-decoration: none;
 }
-body {
+/* body {
   background-color: #e5ecf9;
-}
+} */
 
 .container {
   display: flex;
@@ -162,7 +162,7 @@ body {
   width: 1000px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   margin: auto;
-  margin-top: 75px;
+  margin-top: 10px;
 }
 
 .info {
@@ -252,106 +252,6 @@ body {
   -o-border-radius: 5px;
 }
 
-/*empiezabody*/
-body {
-  background-color: #e5ecf9;
-}
-
-.container {
-  display: flex;
-  height: 500px;
-  width: 1000px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-  margin: auto;
-  margin-top: 75px;
-}
-
-.info {
-  background-image: url(LOGO.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  text-align: center;
-  padding: 150px 50px;
-  width: 50%;
-  background-color: white;
-}
-
-.info h2 {
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 50px;
-  margin-bottom: 25px;
-}
-
-.info hr {
-  width: 55px;
-  border: 4px solid #fff;
-  margin-left: 170px;
-  margin-bottom: 25px;
-}
-
-.txt-2 {
-  color: #fff;
-  font-size: 18px;
-}
-
-.form {
-  padding: 70px 100px; /*Padding del formulario*/
-  width: 50%;
-  text-align: center;
-  background-color: #46adfa;
-}
-
-.form h2 {
-  color: #fff;
-  font-size: 30px;
-  margin-bottom: 25px;
-}
-
-.form p {
-  font-size: 16px;
-  color: #fff;
-  margin-bottom: 25px;
-}
-
-.inputs {
-  display: flex;
-  flex-direction: column;
-}
-
-.box {
-  background-color: #f9f9f9;
-  outline: none;
-  border: 5px solid #46adfa;
-  border-width: 0 0 0 5px;
-  padding: 15px 35px;
-  margin-bottom: 20px;
-}
-
-.inputs a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 15px;
-  margin-bottom: 35px;
-}
-
-.submit {
-  cursor: pointer;
-  margin-top: 20px;
-  border: 1px solid white;
-  background-color: #46adfa;
-  padding: 10px;
-  bottom: 0;
-  color: #fff;
-  font-size: 15px;
-  text-transform: uppercase;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
 /* Estilos footer */
 footer {
   position: fixed;
