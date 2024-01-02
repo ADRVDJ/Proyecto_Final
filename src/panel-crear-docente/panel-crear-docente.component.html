@@ -1,1 +1,110 @@
-<p>panel-crear-docente works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="panel-crear-docente.component.css">
+    <title>Panel crear Docentes</title>
+    <style>
+        .building-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .building-container .input-container {
+            width: 48%; /* Ajustar según sea necesario para dejar espacio entre los elementos */
+            margin-right: 10%; /* Espacio entre las filas */
+        }
+
+        .building-container:last-child .input-container {
+            margin-right: 0; /* Elimina el margen en el último elemento */
+        }
+
+        .buttons-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px; /* Ajusta el espacio entre los elementos y el margen superior */
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            max-width: 300px; /* Ajusta el ancho máximo si es necesario */
+            width: 100%;
+        }
+
+        button {
+            width: 48%; /* Ajusta el ancho de los botones según sea necesario */
+        }
+    </style>
+</head>
+<body>
+    <div class="panel">
+        <p class="txt-2">Panel Crear Docentes</p>
+
+        <div class="building-container">
+            <div class="input-container">
+                <input type="nombre" class="box" placeholder="Nombre Docente">
+            </div>
+
+            <div class="input-container input-arrow">
+                <label for="Seleccione" class="dropdown-btn">Seleccione el Periodo</label>
+                <div id="SeleccioneDropdown" class="dropdown-content">
+                    <option value="curso1">0</option>
+                </div>
+            </div>
+        </div>
+
+        <div class="building-container">
+            <div class="input-container">
+                <input type="nombre" class="box" placeholder="Titulo Profesional">
+            </div>
+
+            <div class="input-container input-arrow">
+                <label for="Seleccione" class="dropdown-btn">Seleccione el Estado</label>
+                <div id="SeleccioneDropdown" class="dropdown-content">
+                    <option value="curso1">0</option>
+                </div>
+            </div>
+        </div>
+
+        <div class="building-container">
+            <div class="input-container">
+                <input type="nombre" class="box" placeholder="Fecha de Ingreso">
+            </div>
+
+            <div class="input-container input-arrow">
+                <label for="Seleccione" class="dropdown-btn">Seleccione el Cargo</label>
+                <div id="SeleccioneDropdown" class="dropdown-content">
+                    <option value="curso1">0</option>
+                </div>
+            </div>
+        </div>
+
+        <div class="building-container">
+            <div class="input-container input-arrow">
+                <label for="Seleccione" class="dropdown-btn">Seleccione el Tipo de Contrato</label>
+                <div id="SeleccioneDropdown" class="dropdown-content">
+                    <option value="modalidad1">0</option>
+                </div>
+            </div>
+
+            <div class="input-container input-arrow">
+                <label for="Seleccione" class="dropdown-btn">Seleccione la Actividad</label>
+                <div id="SeleccioneDropdown" class="dropdown-content">
+                    <option value="curso1">0</option>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons-container">
+            <div class="buttons">
+                <button id="crear-materia">Crear Docente</button>
+                <button id="cancelar">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
