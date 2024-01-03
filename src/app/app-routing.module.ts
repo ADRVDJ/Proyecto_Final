@@ -2,11 +2,11 @@
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from 'src/login/login.component';
-import { FooterComponent } from 'src/footer/footer.component';
-import { ListarRolesComponent } from 'src/listar-roles/listar-roles.component';
-import { PeriodosComponent } from 'src/periodos/periodos.component';
-import { SistemaAdministrativoComponent } from 'src/sistema-administrativo/sistema-administrativo.component';
+import { LoginComponent } from './login/login.component';
+import { FooterComponent } from './footer/footer.component';
+import { ListarRolesComponent } from './listar-roles/listar-roles.component';
+import { ListadoPeriodosComponent } from './listado-periodos/listado-periodos.component';
+import { SistemaAdministrativoComponent } from './sistema-administrativo/sistema-administrativo.component';
 const routes: Routes = [
    { path: 'login', component: LoginComponent },
    {path: 'footer', component: FooterComponent},
@@ -15,7 +15,10 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  
+  declarations: [
+    // ...otros componentes
+   LoginComponent,
+  ],
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
