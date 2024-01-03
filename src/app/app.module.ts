@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { LoginComponent } from './login/login.component';
 import { SlidebarComponent } from './slidebar/slidebar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ListarCursosComponent } from './listar-cursos/listar-cursos.component';
@@ -26,7 +26,7 @@ import { ListadoPeriodosComponent } from './listado-periodos/listado-periodos.co
 @NgModule({
   declarations: [
     AppComponent,
-   
+    LoginComponent,
     SlidebarComponent,
     FooterComponent,
     ListarCursosComponent,
