@@ -1,216 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edgm" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="stylesheet" href="login.component.css" />
-  </head>
-  <header>
-    <nav class="nav">
-      <div class="nav__container">
-        <!-- <a href="#menu" class="nav__menu">
-          <img src="./assets/menu.svg" class="nav__icon" />
-        </a> -->
-
-        <!-- <a href="#" class="nav__menu nav__menu--second">
-          <img src="./assets/close.svg" class="nav__icon" />
-        </a> -->
-
-        <ul class="dropdown" id="menu">
-          <li class="dropdown__list">
-            <a href="#" class="dropdown__link">
-              <!-- <img src="./assets/house.svg" class="dropdown__icon" /> -->
-              <span class="dropdown__span">Roles</span>
-              <img src="./assets/down.svg" class="dropdown__arrow" />
-
-              <input type="checkbox" class="dropdown__check" />
-            </a>
-
-            <div class="dropdown__content">
-              <ul class="dropdown__sub">
-                <li class="dropdown__li">
-                  <a href="#" class="dropdown__anchor">Crear Rol</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="dropdown__list">
-            <a href="#" class="dropdown__link">
-              <!-- <img src="./assets/projects.svg" class="dropdown__icon" /> -->
-              <span class="dropdown__span">Cursos</span>
-              <img src="./assets/down.svg" class="dropdown__arrow" />
-
-              <input type="checkbox" class="dropdown__check" />
-            </a>
-
-            <div class="dropdown__content">
-              <ul class="dropdown__sub">
-                <li class="dropdown__li">
-                  <a href="#" class="dropdown__anchor">Crear Cursos</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="dropdown__list">
-            <a href="#" class="dropdown__link">
-              <!-- <img src="./assets/email.svg" class="dropdown__icon" /> -->
-              <span class="dropdown__span">Periodos</span>
-              <img src="./assets/down.svg" class="dropdown__arrow" />
-              <input type="checkbox" class="dropdown__check" />
-            </a>
-
-            <div class="dropdown__content">
-              <ul class="dropdown__sub">
-                <li class="dropdown__li">
-                  <a href="#" class="dropdown__anchor">Crear Periodos</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="dropdown__list">
-            <a href="#" class="dropdown__link">
-              <!-- <img src="./assets/email.svg" class="dropdown__icon" /> -->
-              <span class="dropdown__span">Carrera</span>
-              <img src="./assets/down.svg" class="dropdown__arrow" />
-              <input type="checkbox" class="dropdown__check" />
-            </a>
-
-            <div class="dropdown__content">
-              <ul class="dropdown__sub">
-                <li class="dropdown__li">
-                  <a href="#" class="dropdown__anchor">Crear Carrera</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="dropdown__list">
-            <a href="#" class="dropdown__link">
-              <!-- <img src="./assets/email.svg" class="dropdown__icon" /> -->
-              <span class="dropdown__span">Jornada</span>
-              <img src="./assets/down.svg" class="dropdown__arrow" />
-              <input type="checkbox" class="dropdown__check" />
-            </a>
-
-            <div class="dropdown__content">
-              <ul class="dropdown__sub">
-                <li class="dropdown__li">
-                  <a href="#" class="dropdown__anchor">Crear Jornada</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="dropdown__list">
-            <a href="#" class="dropdown__link">
-              <!-- <img src="./assets/email.svg" class="dropdown__icon" /> -->
-              <span class="dropdown__span">Materias</span>
-              <img src="./assets/down.svg" class="dropdown__arrow" />
-              <input type="checkbox" class="dropdown__check" />
-            </a>
-
-            <div class="dropdown__content">
-              <ul class="dropdown__sub">
-                <li class="dropdown__li">
-                  <a href="#" class="dropdown__anchor">Crear Materias</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="dropdown__list">
-            <a href="#" class="dropdown__link">
-              <!-- <img src="./assets/email.svg" class="dropdown__icon" /> -->
-              <span class="dropdown__span">Actividades</span>
-              <img src="./assets/down.svg" class="dropdown__arrow" />
-              <input type="checkbox" class="dropdown__check" />
-            </a>
-
-            <div class="dropdown__content">
-              <ul class="dropdown__sub">
-                <li class="dropdown__li">
-                  <a href="#" class="dropdown__anchor">Crear Actividades</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="dropdown__list">
-            <a href="#" class="dropdown__link">
-              <!-- <img src="./assets/email.svg" class="dropdown__icon" /> -->
-              <span class="dropdown__span">Cargo</span>
-              <img src="./assets/down.svg" class="dropdown__arrow" />
-              <input type="checkbox" class="dropdown__check" />
-            </a>
-
-            <div class="dropdown__content">
-              <ul class="dropdown__sub">
-                <li class="dropdown__li">
-                  <a href="#" class="dropdown__anchor">Crear Cargo</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="dropdown__list">
-            <a href="#" class="dropdown__link">
-              <!-- <img src="./assets/email.svg" class="dropdown__icon" /> -->
-              <span class="dropdown__span">Docentes</span>
-              <img src="./assets/down.svg" class="dropdown__arrow" />
-              <input type="checkbox" class="dropdown__check" />
-            </a>
-
-            <div class="dropdown__content">
-              <ul class="dropdown__sub">
-                <li class="dropdown__li">
-                  <a href="#" class="dropdown__anchor">Crear Docentes</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <body>
+</head>
+<body>
     <div class="container">
-      <div class="info">
-        <p class="txt-1"></p>
-      </div>
-      <form class="form">
-        <h2>Bienvenido</h2>
-
-        <p class="txt-2">Sistema Gestion Administrativa</p>
-        <div class="inputs">
-          <input type="email" class="box" placeholder="Ingresa tu correo" />
-          <input
-            type="password"
-            class="box"
-            placeholder="Ingresa tu contraseña"
-          />
-
-          <input type="submit" value="Iniciar Sesión" class="submit" />
-          <a href="#">¿Olvidaste tu contraseña?</a>
+        <div class="info">
+            <p class="txt-1"></p>
         </div>
-      </form>
+        <form class="form" onsubmit="redirectToSistemaAdministrativo()">
+            <h2>Bienvenido</h2>
+
+            <p class="txt-2">Sistema Gestion Administrativa</p>
+            <div class="inputs">
+                <input type="email" class="box" placeholder="Ingresa tu correo" />
+                <input type="password" class="box" placeholder="Ingresa tu contraseña" />
+
+                <input type="submit" value="Iniciar Sesión" class="submit" />
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+        </form>
     </div>
 
     <footer>
-      <div class="texto_footer">
-        <p class="texto-1">Tecnológico del Azuay</p>
-        <p class="texto-1">Instituto Universitario</p>
-      </div>
+        <div class="texto_footer">
+            <p class="texto-1">Tecnológico del Azuay</p>
+            <p class="texto-1">Instituto Universitario</p>
+        </div>
     </footer>
-  </body>
 
-  <!-- <script>
-  const menuStyles = document.querySelector(".nav").getAttribute("#menu");
-  console.log(menuStyles); // Puedes utilizar esta variable según tus necesidades
-</script> -->
-  <!-- </html> -->
+    <script>
+        function redirectToSistemaAdministrativo() {
+            // Redirecciona a la página "sistema-administrativo.component.html" con ruta relativa
+            console.log("Redirigiendo a sistema-administrativo.component.html");
+            window.location.href = "src/sistema-administrativo/sistema-administrativo.component.html";
+            
+            return false; // Evita que el formulario se envíe tradicionalmente
+        }
+    </script>
+</body>
 </html>
