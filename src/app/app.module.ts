@@ -22,6 +22,8 @@ import { PanelCrearMateriasComponent } from './panel-crear-materias/panel-crear-
 import { PeriodosComponent } from './periodos/periodos.component';
 import { RolComponent } from './rol/rol.component';
 import { ListadoPeriodosComponent } from './listado-periodos/listado-periodos.component';
+import { ListadoDocentesComponent } from './listado-docentes/listado-docentes.component';
+
 
 @NgModule({
   declarations: [
@@ -43,6 +45,7 @@ import { ListadoPeriodosComponent } from './listado-periodos/listado-periodos.co
     PeriodosComponent,
     RolComponent,
     ListadoPeriodosComponent,
+    ListadoDocentesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

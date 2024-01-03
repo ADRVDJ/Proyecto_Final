@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="listado-docentes.component.css" />
+    <title>Tabla de Listado de Docentes</title>
+  </head>
+
+  <header>
+    <nav class="nav">
+      <div class="nav__container">
+        <a href="#menu" class="nav__menu">
+          <img src="./assets/menu.svg" class="nav__icon" />
+        </a>
+
+        <a href="#" class="nav__menu nav__menu--second">
+          <img src="./assets/close.svg" class="nav__icon" />
+        </a>
+
+        <ul class="dropdown" id="menu">
+          <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+              <!-- <img src="./assets/house.svg" class="dropdown__icon" /> -->
+              <span class="dropdown__span">Roles</span>
+              <img src="./assets/down.svg" class="dropdown__arrow" />
+
+              <input type="checkbox" class="dropdown__check" />
+            </a>
+
+            <div class="dropdown__content">
+              <ul class="dropdown__sub">
+                <li class="dropdown__li">
+                  <a href="#" class="dropdown__anchor">Crear Rol</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+              <!-- <img src="./assets/projects.svg" class="dropdown__icon" /> -->
+              <span class="dropdown__span">Cursos</span>
+              <img src="./assets/down.svg" class="dropdown__arrow" />
+
+              <input type="checkbox" class="dropdown__check" />
+            </a>
+
+            <div class="dropdown__content">
+              <ul class="dropdown__sub">
+                <li class="dropdown__li">
+                  <a href="#" class="dropdown__anchor">Crear Cursos</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+              <!-- <img src="./assets/email.svg" class="dropdown__icon" /> -->
+              <span class="dropdown__span">Periodos</span>
+              <img src="./assets/down.svg" class="dropdown__arrow" />
+              <input type="checkbox" class="dropdown__check" />
+            </a>
+
+            <div class="dropdown__content">
+              <ul class="dropdown__sub">
+                <li class="dropdown__li">
+                  <a href="#" class="dropdown__anchor">Crear Periodos</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+              <!-- <img src="./assets/email.svg" class="dropdown__icon" /> -->
+              <span class="dropdown__span">Carrera</span>
+              <img src="./assets/down.svg" class="dropdown__arrow" />
+              <input type="checkbox" class="dropdown__check" />
+            </a>
+
+            <div class="dropdown__content">
+              <ul class="dropdown__sub">
+                <li class="dropdown__li">
+                  <a href="#" class="dropdown__anchor">Crear Carrera</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+              <!-- <img src="./assets/email.svg" class="dropdown__icon" /> -->
+              <span class="dropdown__span">Jornada</span>
+              <img src="./assets/down.svg" class="dropdown__arrow" />
+              <input type="checkbox" class="dropdown__check" />
+            </a>
+
+            <div class="dropdown__content">
+              <ul class="dropdown__sub">
+                <li class="dropdown__li">
+                  <a href="#" class="dropdown__anchor">Crear Jornada</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+              <!-- <img src="./assets/email.svg" class="dropdown__icon" /> -->
+              <span class="dropdown__span">Materias</span>
+              <img src="./assets/down.svg" class="dropdown__arrow" />
+              <input type="checkbox" class="dropdown__check" />
+            </a>
+
+            <div class="dropdown__content">
+              <ul class="dropdown__sub">
+                <li class="dropdown__li">
+                  <a href="#" class="dropdown__anchor">Crear Materias</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+              <!-- <img src="./assets/email.svg" class="dropdown__icon" /> -->
+              <span class="dropdown__span">Actividades</span>
+              <img src="./assets/down.svg" class="dropdown__arrow" />
+              <input type="checkbox" class="dropdown__check" />
+            </a>
+
+            <div class="dropdown__content">
+              <ul class="dropdown__sub">
+                <li class="dropdown__li">
+                  <a href="#" class="dropdown__anchor">Crear Actividades</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+              <!-- <img src="./assets/email.svg" class="dropdown__icon" /> -->
+              <span class="dropdown__span">Cargo</span>
+              <img src="./assets/down.svg" class="dropdown__arrow" />
+              <input type="checkbox" class="dropdown__check" />
+            </a>
+
+            <div class="dropdown__content">
+              <ul class="dropdown__sub">
+                <li class="dropdown__li">
+                  <a href="#" class="dropdown__anchor">Crear Cargo</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="dropdown__list">
+            <a href="#" class="dropdown__link">
+              <!-- <img src="./assets/email.svg" class="dropdown__icon" /> -->
+              <span class="dropdown__span">Docentes</span>
+              <img src="./assets/down.svg" class="dropdown__arrow" />
+              <input type="checkbox" class="dropdown__check" />
+            </a>
+
+            <div class="dropdown__content">
+              <ul class="dropdown__sub">
+                <li class="dropdown__li">
+                  <a href="#" class="dropdown__anchor">Crear Docentes</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <div class="center-container">
+      <p class="txt-2">Listado de Docentes</p>
+
+      <div class="inputs">
+        <button>Editar</button>
+        <button class="button1">Eliminar</button>
+        <input type="buscar" class="box" placeholder="Buscar" />
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Titulo Profesional</th>
+            <th>Fecha Ingreso</th>
+            <th>Estado Docente</th>
+            <th>Tipo de Contrato</th>
+            <th>Cargo</th>
+            <th>Actividad</th>
+            <th>Periodo</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Fulano</td>
+            <td>Ingeniero en Excel</td>
+            <td>09/12/2023</td>
+            <td>Activo</td>
+            <td>Tiempo Completo</td>
+            <td>Docente</td>
+            <td>Proyecto de Titulación</td>
+            <td>Abril - Agosto 2024</td>
+
+          </tr>
+        </tbody>
+
+        <tbody>
+          <tr>
+            <td>Fulano</td>
+            <td>Ingeniero en Excel</td>
+            <td>09/12/2023</td>
+            <td>Activo</td>
+            <td>Tiempo Completo</td>
+            <td>Docente</td>
+            <td>Proyecto de Titulación</td>
+            <td>Abril - Agosto 2024</td>
+
+          </tr>
+        </tbody>
+
+        <tbody>
+          <tr>
+            <td>Fulano</td>
+            <td>Ingeniero en Excel</td>
+            <td>09/12/2023</td>
+            <td>Activo</td>
+            <td>Tiempo Completo</td>
+            <td>Docente</td>
+            <td>Proyecto de Titulación</td>
+            <td>Abril - Agosto 2024</td>
+
+          </tr>
+        </tbody>
+        
+      </table>
+    </div>
+
+    <footer>
+      <div class="texto_footer">
+        <p class="texto-1">Tecnológico del Azuay</p>
+        <p class="texto-1">Instituto Universitario</p>
+      </div>
+    </footer>
+  </body>
+</html>
