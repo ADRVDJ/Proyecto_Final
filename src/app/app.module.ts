@@ -2,7 +2,7 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
+// import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { SlidebarComponent } from './slidebar/slidebar.component';
@@ -22,6 +22,29 @@ import { PeriodosComponent } from './Periodo/periodos/periodos.component';
 import { RolComponent } from './Roles/rol/rol.component';
 import { ListadoPeriodosComponent } from './Periodo/listado-periodos/listado-periodos.component';
 import { ListadoDocentesComponent } from './Docentes/listado-docentes/listado-docentes.component';
+import { SistemaAdministrativoComponent } from './sistema-administrativo/sistema-administrativo.component';
+
+const routes: Routes = [
+  { path: '', redirectTo: '', pathMatch: 'full' },
+  { path: '', component: LoginComponent },
+  { path: 'rol', component: RolComponent },
+  { path: 'curso', component: CursoComponent },
+  { path: 'listar-curso', component: ListarCursosComponent },
+  { path: 'listar-roles', component: ListarRolesComponent },
+  { path: 'crear-actividad', component: CrearActividadComponent },
+  { path: 'footer', component: FooterComponent },
+  { path: 'header', component: HeaderComponent },
+  { path: 'listado-actividades', component: ListadoActividadesComponent },
+  { path: 'listado-cargo', component: ListadoCargoComponent },
+  { path: 'listado-carreras', component: ListadoCarrerasComponent },
+  { path: 'menu', component: MenuComponent },
+  { path: 'panel-crear-carrera', component: PanelCrearCarreraComponent },
+  { path: 'panel-crear-materias', component: PanelCrearMateriasComponent },
+  { path: 'periodos', component: PeriodosComponent },
+  { path: 'listado-periodos', component: ListadoPeriodosComponent },
+  { path: 'listado-docentes', component: ListadoDocentesComponent },
+  { path: 'sistema-administrativo', component: SistemaAdministrativoComponent },
+];
 
 @NgModule({
   declarations: [
@@ -45,7 +68,7 @@ import { ListadoDocentesComponent } from './Docentes/listado-docentes/listado-do
     ListadoPeriodosComponent,
     ListadoDocentesComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],
   bootstrap: [AppComponent],
 })

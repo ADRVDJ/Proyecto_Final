@@ -1,6 +1,6 @@
 import { Periodo } from 'src/app/Periodo/periodo';
 import { Actividades } from 'src/app/Actividades/actividades';
-import { Cargo } from 'src/app/Docentes/cargo';
+import { Cargo } from 'src/app/Cargos/cargo';
 import { Titulo } from 'src/app/Docentes/titulo';
 import { GradoOcupacional } from 'src/app/Docentes/grado_ocupacional';
 import { Persona } from 'src/app/Docentes/Persona';
