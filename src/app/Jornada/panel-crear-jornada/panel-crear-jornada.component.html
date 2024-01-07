@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="panel-crear-jornada.component.css">
     <title>Panel crear Jornadas</title>
 </head>
-<body>
-    <div class="panel">
-        <p class="txt-2">Panel Crear Jornadas</p>
+<form action="" [formGroup]="formularioJornada">
 
-        <div class="input-container">
-            <input type="nombre" class="box" placeholder="Nombre de Jornada">
+    <body>
+        <div class="panel">
+            <p class="txt-2">Panel Crear Jornadas</p>
+
+            <div class="input-container">
+                <input type="nombre" class="box" placeholder="Nombre de Jornada" formControlName="nombre_jornada">
+            </div>
+
+            <div class="buttons">
+                <button id="crear-jornada">Crear Jornada (click)="crearJornada()" </button>
+                <button id="cancelar">Cancelar</button>
+            </div>
         </div>
 
-        <div class="input-container">
-            <input type="descripcion" class="box" placeholder="Descripcion">
-        </div>
-        <div class="buttons">
-            <button id="crear-jornada">Crear Jornada</button>
-            <button id="cancelar">Cancelar</button>
-        </div>
-    </div>
-</body>
+    </body>
+</form>
+
 </html>

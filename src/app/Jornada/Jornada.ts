@@ -1,4 +1,4 @@
 export class Jornada {
-  'id_jornada': number;
-  'nombre_jornada': string;
+  'jornada_id': number;
+  'jornada_nombre': string;
 }

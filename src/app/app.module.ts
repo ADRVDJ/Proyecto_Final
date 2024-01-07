@@ -24,6 +24,9 @@ import { ListadoPeriodosComponent } from './Periodo/listado-periodos/listado-per
 import { ListadoDocentesComponent } from './Docentes/listado-docentes/listado-docentes.component';
 import { SistemaAdministrativoComponent } from './sistema-administrativo/sistema-administrativo.component';
 
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { PanelCrearJornadaComponent } from './Jornada/panel-crear-jornada/panel-crear-jornada.component';
+
 const routes: Routes = [
   { path: '', redirectTo: '', pathMatch: 'full' },
   { path: '', component: LoginComponent },
@@ -44,6 +47,9 @@ const routes: Routes = [
   { path: 'listado-periodos', component: ListadoPeriodosComponent },
   { path: 'listado-docentes', component: ListadoDocentesComponent },
   { path: 'sistema-administrativo', component: SistemaAdministrativoComponent },
+
+  
+  {path:'panel-crear-jornada',component: PanelCrearJornadaComponent},
 ];
 
 @NgModule({
@@ -67,8 +73,9 @@ const routes: Routes = [
     RolComponent,
     ListadoPeriodosComponent,
     ListadoDocentesComponent,
+    PanelCrearJornadaComponent
   ],
-  imports: [BrowserModule, RouterModule.forRoot(routes)],
+  imports: [BrowserModule, RouterModule.forRoot(routes),FormsModule,ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Tabla de listado de Jornadas</title>
 </head>
 <body>
@@ -12,24 +11,24 @@
         <p class="txt-2">Listado de Jornadas</p>
 
         <div class="inputs">
-            <button>Editar</button>
-            <button class="button1">Eliminar</button>
+            <button>Editar (click)=" " </button>
+            <button class="button1">Eliminar  (click)="eliminarJornada(jornada.jornada_id)" </button>
             <input type="buscar" class="box" placeholder="Buscar">
         </div>
 
-        <table>
+        <table class="table table-bordered table-striped">
             <thead>
                 <tr>
+                    <th>Id</th>
                     <th>Nombre</th>
-                    <th>Cargo</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Matutina</td>
-                    <td>Jornada comprendida en el horario de 7 am - 1 pm</td>
+                <tr *ngFor="let jornada of jornadas">
+                    <td>{{jornada.jornada_id}}</td>
+                    <td>{{jornada.jornada_nombre}}</td>
+    
                 </tr>
-                <!-- Agrega más filas según sea necesario -->
             </tbody>
         </table>
 
