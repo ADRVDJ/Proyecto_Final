@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,17 +9,14 @@ import { Router } from '@angular/router';
 export class MenuComponent {
   
   constructor(private router: Router) {}
-  menuabierto = false;
-  comprobar(){
-    this.menuabierto = !this.menuabierto;
+  openRolPanel(): void {
+   
+    this.navigateToRoles();
   }
-  verificar(){
-    const rutas = this.router.url;
-    this.menuabierto = rutas.includes('rol');
-  }
-
+  
+  
   navigateToRoles(): void {
-    this.router.navigate(['/roles']);
+    this.router.navigate(['/']);
   }
 
   navigateToCursos(): void {
