@@ -1,56 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <link rel="stylesheet" href="login.component.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="info">
-        <p class="txt-1"></p>
-      </div>
-      <form class="form" onsubmit="redirectToSistemaAdministrativo()">
-        <h2>Bienvenido</h2>
 
-        <p class="txt-2">Sistema Gestion Administrativa</p>
-        <div class="inputs">
-          <input type="email" class="box" placeholder="Ingresa tu correo" />
-          <input
-            type="password"
-            class="box"
-            placeholder="Ingresa tu contraseña"
-          />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="login.component.css" />
+</head>
 
-          <input
-            type="submit"
-            value="Iniciar Sesión"
-            class="submit"
-            routerLink="/sistema-administrativo"
-          />
-          <a href="#">¿Olvidaste tu contraseña?</a>
-        </div>
-      </form>
+<body>
+  <div class="container">
+    <div class="info">
+      <p class="txt-1"></p>
     </div>
+    <form class="form" (submit)="redirectToSistemaAdministrativo()">
+      <h2>Bienvenido</h2>
 
-    <footer>
-      <div class="texto_footer">
-        <p class="texto-1">Tecnológico del Azuay</p>
-        <p class="texto-1">Instituto Universitario</p>
+      <p class="txt-2">Sistema Gestion Administrativa</p>
+      <div class="inputs">
+        <input type="email" class="box" placeholder="Ingresa tu correo" />
+        <input type="password" class="box" placeholder="Ingresa tu contraseña" />
+
+        <input type="submit" value="Iniciar Sesión" class="submit" />
+        <a routerLink="/recuperacion-contrasena">¿Olvidaste tu contraseña?</a>
       </div>
-    </footer>
+    </form>
+  </div>
+  <script>
+    function redirectToSistemaAdministrativo() {
+      console.log("Redirigiendo a sistema-administrativo");
+      return false;
+    }
+  </script>
+</body>
 
-    <script>
-      function redirectToSistemaAdministrativo() {
-        // Redirecciona a la página "sistema-administrativo.component.html" con ruta relativa
-        console.log("Redirigiendo a sistema-administrativo.component.html");
-        window.location.href =
-          "src/sistema-administrativo/sistema-administrativo.component.html";
-
-        return false; // Evita que el formulario se envíe tradicionalmente
-      }
-    </script>
-  </body>
 </html>

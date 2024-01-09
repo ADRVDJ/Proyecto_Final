@@ -23,6 +23,7 @@ import { RolComponent } from './Roles/rol/rol.component';
 import { ListadoPeriodosComponent } from './Periodo/listado-periodos/listado-periodos.component';
 import { ListadoDocentesComponent } from './Docentes/listado-docentes/listado-docentes.component';
 import { SistemaAdministrativoComponent } from './sistema-administrativo/sistema-administrativo.component';
+import { RecuperacionContrasenaComponent } from './recuperacion-contrasena/recuperacion-contrasena.component';
 
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { PanelCrearJornadaComponent } from './Jornada/panel-crear-jornada/panel-crear-jornada.component';
@@ -47,6 +48,10 @@ const routes: Routes = [
   { path: 'listado-periodos', component: ListadoPeriodosComponent },
   { path: 'listado-docentes', component: ListadoDocentesComponent },
   { path: 'sistema-administrativo', component: SistemaAdministrativoComponent },
+
+  { path: 'recuperacion-contrasena', component: RecuperacionContrasenaComponent },
+  { path: 'login', component: LoginComponent },
+
 
   
   {path:'panel-crear-jornada',component: PanelCrearJornadaComponent},
@@ -73,6 +78,7 @@ const routes: Routes = [
     RolComponent,
     ListadoPeriodosComponent,
     ListadoDocentesComponent,
+    RecuperacionContrasenaComponent,
     PanelCrearJornadaComponent
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes),FormsModule,ReactiveFormsModule],

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-recuperacion-contrasena',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./recuperacion-contrasena.component.css']
 })
 export class RecuperacionContrasenaComponent {
-
+  constructor(private router: Router) { }
 }
